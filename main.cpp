@@ -83,16 +83,10 @@ int main(int argc, char *argv[])
     mainWindow.resize(1000,600);
     mainWindow.show();
 
-
     EvProperty  * card = engine.create<EvProperty>("/home/ghaith/development/workspace/EzVerif/EzVerif/qml/Card.qml");
-
     QVariant netlisting;
-
     QMetaObject::invokeMethod(card,"netlist",Q_RETURN_ARG(QVariant,netlisting));
-
-
     qDebug()<<netlisting.toString();
-
 
     EvPropertiesListView * pe = new EvPropertiesListView(card);
     EvWidget *  pane =new EvWidget;

@@ -13,7 +13,8 @@ TEMPLATE = app
 OTHER_FILES += \
     qml/IProcess.qml \
     qml/Card.qml \
-    qml/IProject.qml
+    qml/IProject.qml \
+    LICENSE.txt
 
 RESOURCES += \
     icons.qrc \
